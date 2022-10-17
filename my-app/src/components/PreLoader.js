@@ -5,19 +5,19 @@ import './PreLoader.css';
 
 function preloader(immune, background, color) {
 	$('body').prepend(
-		'<div class="preloader"><span class="loading-bar"></span><i class="radial-loader"></i></div>'
+		'<div class="preloader"><span class="loading-bar"></span></div>'
 	);
 
 	if (immune === true) {
 		$('body > div.preloader').addClass('immune');
 	}
-
+	
 	if (background === 'white') {
 		$('body > div.preloader').addClass('white');
 	} else if (background === 'black') {
 		$('body > div.preloader').addClass('black');
 	}
-
+	
 	if (color === 'red') {
 		$('body > div.preloader span.loading-bar').addClass('red-colored');
 		$('body > div.preloader i.radial-loader').addClass('red-colored');
@@ -41,7 +41,9 @@ function preloader(immune, background, color) {
 	});
 }
 
-$('preloader').fadeTo(15000, 1).fadeOut(1000);
+$('body > div.preloader').addClass('preload')
+$('body > div.preloader').removeClass('immune');
+$('preloader').fadeTo(0, 1).fadeOut(1000);
 
 preloader(true, 'black', 'red');
 
