@@ -1,6 +1,8 @@
 /** @format */
 
-import React, { Painting } from 'react';
+import React from 'react';
+import * as Painting from './components/Painting';
+import * as Chromatic from './components/Chromatic';
 import './App.css';
 import './components/Painting.css';
 
@@ -8,7 +10,7 @@ function App() {
 	return (
 		<div className='App'>
 			<header className='App-header'>
-				{/* <Chromatic /> */}
+				<Chromatic />
 				<Painting className='shadow' />
 			</header>
 		</div>

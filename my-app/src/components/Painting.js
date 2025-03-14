@@ -23,7 +23,7 @@ const ASPECT = WIDTH / HEIGHT;
 const AMOUNT = WIDTH * HEIGHT;
 const PR = Math.min(devicePixelRatio, 2);
 const imgSrc =
-	'https://images.unsplash.com/photo-1677154593482-1c1158beb8e3?q=80&w=2160&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
+	'https://images.unsplash.com/photo-1741447096098-9c69852f365b?q=80&w=2664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
 let pointSizeScale = Math.min(window.innerWidth, window.innerHeight) / 162;
 
 // ------------------------ //
