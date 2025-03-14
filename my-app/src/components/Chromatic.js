@@ -1,5 +1,5 @@
 /** @format */
-import { RGBA } from "https://rawcdn.githack.com/strangerintheq/rgba/0.0.9/rgba.js";
+import { RGBA } from 'https://rawcdn.githack.com/strangerintheq/rgba/0.0.9/rgba.js';
 
 let xy = [0.7, 0.7];
 

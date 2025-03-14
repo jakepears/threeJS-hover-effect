@@ -14,24 +14,28 @@ import {
 import { GPUComputationRenderer } from 'https://cdn.skypack.dev/three@0.136.0/examples/jsm/misc/GPUComputationRenderer';
 import './Painting.css';
 
-
 // ------------------------ //
 // CONSTANTS
 
-const WIDTH = 400;
-const HEIGHT = 688;
+const WIDTH = 2160;
+const HEIGHT = 2700;
 const ASPECT = WIDTH / HEIGHT;
-const AMOUNT = WIDTH * HEIGHT; 
+const AMOUNT = WIDTH * HEIGHT;
 const PR = Math.min(devicePixelRatio, 2);
-const imgsrc =
-	'https://preview.redd.it/g6jvapctifb71.jpg?auto=webp&s=297e6496db44f6a0b1ee8dfda8916294114b5483';
+const imgSrc =
+	'https://images.unsplash.com/photo-1677154593482-1c1158beb8e3?q=80&w=2160&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
 let pointSizeScale = Math.min(window.innerWidth, window.innerHeight) / 162;
 
 // ------------------------ //
 // SETUP
 const scene = new Scene();
 
-const camera = new PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 120);
+const camera = new PerspectiveCamera(
+	60,
+	window.innerWidth / window.innerHeight,
+	0.1,
+	120
+);
 camera.position.set(0, 0, 5);
 
 const f = Math.tan((camera.fov * Math.PI) / 360);
@@ -44,7 +48,7 @@ renderer.setPixelRatio(PR);
 document.body.append(renderer.domElement);
 
 const loader = new TextureLoader();
-const image = loader.load(imgsrc);
+const image = loader.load(imgSrc);
 
 const gpu = new GPUComputationRenderer(WIDTH, HEIGHT, renderer);
 
@@ -125,7 +129,7 @@ const material = new RawShaderMaterial({
 	},
 
 	vertexShader: `
-precision highp float;
+precision mediump float;
 
 attribute vec2 ref;
 
@@ -340,4 +344,3 @@ addEventListener('resize', () => {
 	originXScale = originYScale * camera.aspect;
 	renderer.setSize(window.innerWidth, window.innerHeight);
 });
-

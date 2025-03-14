@@ -1,19 +1,18 @@
+/** @format */
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import './components/Chromatic';
 import './components/Painting';
 import App from './App';
-import PreLoader from './components/PreLoader.js';
-import './components/PreLoader';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <PreLoader />
-    <App />
-  </React.StrictMode>
+	<React.StrictMode>
+		<App />
+	</React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
