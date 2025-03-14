@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/threeJS-hover-effect/static/css/main.5bf22ecc.css",
+    "main.js": "/threeJS-hover-effect/static/js/main.733ddd8b.js",
+    "static/js/453.ed3810f9.chunk.js": "/threeJS-hover-effect/static/js/453.ed3810f9.chunk.js",
+    "index.html": "/threeJS-hover-effect/index.html",
+    "main.5bf22ecc.css.map": "/threeJS-hover-effect/static/css/main.5bf22ecc.css.map",
+    "main.733ddd8b.js.map": "/threeJS-hover-effect/static/js/main.733ddd8b.js.map",
+    "453.ed3810f9.chunk.js.map": "/threeJS-hover-effect/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5bf22ecc.css",
+    "static/js/main.733ddd8b.js"
+  ]
+}
